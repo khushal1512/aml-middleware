@@ -1,0 +1,21 @@
+{
+  "name": "bitcoin-forensics-server",
+  "version": "1.0.0",
+  "description": "Bitcoin forensics pattern generator WebSocket server",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node src/server.ts"
+  },
+  "dependencies": {
+    "ws": "^8.16.0",
+    "crypto": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.10",
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
