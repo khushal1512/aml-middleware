@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  button {
+    border-radius: 3px !important;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    background-color: #fff6e5;
+    color: #2a2a2a;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #fff6e5;
+    border-left: 1px solid #2a2a2a;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #2a2a2a;
+  }
+}
+
+@layer components {
+  .retro-border {
+    border: 2px solid #2a2a2a;
+  }
+
+  .retro-border-thin {
+    border: 1px solid #2a2a2a;
+  }
+
+  .retro-card {
+    border: 2px solid #2a2a2a;
+    background-color: #fff6e5;
+    padding: 1rem;
+  }
+
+  .retro-btn {
+    border: 2px solid #2a2a2a;
+    background-color: #fff6e5;
+    padding: 0.5rem 1rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background-color 0.1s, color 0.1s;
+  }
+
+  .retro-btn:hover {
+    background-color: #2a2a2a;
+    color: #fff6e5;
+  }
+
+  .retro-btn-active {
+    background-color: #2a2a2a;
+    color: #fff6e5;
+  }
+
+  .danger-pulse {
+    animation: pulse_danger 1.2s ease-in-out infinite;
+  }
+
+  .pattern-normal {
+    border-color: #2a2a2a;
+  }
+
+  .pattern-peel_chain {
+    border-color: #d4a33b;
+  }
+
+  .pattern-coin_burst {
+    border-color: #fe734c;
+  }
+
+  .pattern-mixer {
+    border-color: #de4a3d;
+  }
+}
+
+.react-flow__node {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.react-flow__edge-path {
+  stroke-width: 1.5;
+}
+
+.react-flow__controls {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: 2px solid #2a2a2a !important;
+}
+
+.react-flow__controls-button {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border-bottom: 1px solid #2a2a2a !important;
+  background: #fff6e5 !important;
+}
+
+.react-flow__minimap {
+  border: 2px solid #2a2a2a !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
