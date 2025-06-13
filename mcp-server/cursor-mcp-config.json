@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "btc-forensics": {
+      "command": "node",
+      "args": ["./mcp-server/dist/index.js"],
+      "env": {
+        "MEMPOOL_WS_URL": "ws://localhost:8080",
+        "LOG_LEVEL": "info",
+        "MAX_TX_STORE": "5000"
+      }
+    }
+  }
+}
